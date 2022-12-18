@@ -145,7 +145,6 @@ import           Data.ByteString                        (ByteString)
 import qualified Data.Configurator                      as C
 import qualified Data.Configurator.Types                as C
 import           Data.Int                               (Int64)
-import           Data.Monoid                            (Monoid (..), (<>))
 import           Data.Pool                              (createPool)
 import           Data.Ratio                             (denominator, numerator)
 import qualified Data.Text                              as T

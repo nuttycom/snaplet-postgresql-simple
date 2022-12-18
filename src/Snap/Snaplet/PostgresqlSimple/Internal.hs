@@ -19,7 +19,6 @@ import qualified Control.Monad.Trans.State.Strict  as SS
 import qualified Control.Monad.Trans.Writer.Lazy   as LW
 import qualified Control.Monad.Trans.Writer.Strict as SW
 import           Data.ByteString                   (ByteString)
-import           Data.Monoid                       (Monoid)
 import           Data.Pool                         (Pool, withResource)
 import qualified Database.PostgreSQL.Simple        as P
 

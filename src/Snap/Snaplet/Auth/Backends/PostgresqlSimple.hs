@@ -317,7 +317,7 @@ onFailure e = return $ Left $ A.AuthError $ show e
 ------------------------------------------------------------------------------
 -- |
 instance A.IAuthBackend PostgresAuthManager where
-    save PostgresAuthManager{..} u@A.AuthUser{..} = do
+    save PostgresAuthManager{..} u@A.AuthUser{} = do
         let (qstr, params) = saveQuery pamTable u
         let q = Query $ T.encodeUtf8 qstr
         let action = withConnection pamConn $ \conn -> do
